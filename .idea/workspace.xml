@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f560772e-8bc3-4a98-9f78-0b2af09872b6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test_get_ip_address.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Report_IP_address.py" afterPath="$PROJECT_DIR$/Report_IP_address.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test_get_ip_address.py" afterPath="$PROJECT_DIR$/Test_get_ip_address.py" />
     </list>
     <ignored path="Report_IP_Address_raspberry.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,10 +27,14 @@
       <file leaf-file-name="Report_IP_address.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Report_IP_address.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.3024602">
-              <caret line="15" column="63" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
+            <state vertical-scroll-proportion="0.4535433">
+              <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
               <folding>
                 <element signature="e#100#113#0" expanded="true" />
+                <element signature="e#530#915#0" expanded="false" />
+                <element signature="e#959#2107#0" expanded="false" />
+                <element signature="e#2275#3121#0" expanded="false" />
+                <element signature="e#3151#3880#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -41,7 +44,7 @@
         <entry file="file://$PROJECT_DIR$/Test_get_ip_address.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="64" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="64" />
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -138,7 +141,7 @@
       </console-settings>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Test_get_ip_address">
+  <component name="RunManager" selected="Python.Report_IP_address">
     <configuration default="false" name="Test_get_ip_address" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -152,6 +155,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Report_IP_Address_raspberry" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test_get_ip_address.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Report_IP_address" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Report_IP_Address_raspberry" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Report_IP_address.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -297,13 +317,15 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Python.Unnamed" />
       <item index="1" class="java.lang.String" itemvalue="Python.Test_get_ip_address" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Report_IP_address" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.Test_get_ip_address" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.Report_IP_address" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Test_get_ip_address" />
       </list>
     </recent_temporary>
   </component>
@@ -330,8 +352,8 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.124739036" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2722672" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32909605" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2722672" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -366,6 +388,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#100#113#0" expanded="true" />
+            <element signature="e#530#915#0" expanded="false" />
+            <element signature="e#959#2107#0" expanded="false" />
+            <element signature="e#2275#3121#0" expanded="false" />
+            <element signature="e#3151#3880#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -376,6 +402,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#100#113#0" expanded="true" />
+            <element signature="e#530#915#0" expanded="false" />
+            <element signature="e#959#2107#0" expanded="false" />
+            <element signature="e#2275#3121#0" expanded="false" />
+            <element signature="e#3151#3880#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -386,6 +416,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#100#113#0" expanded="true" />
+            <element signature="e#530#915#0" expanded="false" />
+            <element signature="e#959#2107#0" expanded="false" />
+            <element signature="e#2275#3121#0" expanded="false" />
+            <element signature="e#3151#3880#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -396,6 +430,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#100#113#0" expanded="true" />
+            <element signature="e#530#915#0" expanded="false" />
+            <element signature="e#959#2107#0" expanded="false" />
+            <element signature="e#2275#3121#0" expanded="false" />
+            <element signature="e#3151#3880#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -406,6 +444,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#100#113#0" expanded="true" />
+            <element signature="e#530#915#0" expanded="false" />
+            <element signature="e#959#2107#0" expanded="false" />
+            <element signature="e#2275#3121#0" expanded="false" />
+            <element signature="e#3151#3880#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -413,17 +455,21 @@
     <entry file="file://$PROJECT_DIR$/Test_get_ip_address.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="64" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="64" />
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Report_IP_address.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.3024602">
-          <caret line="15" column="63" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
+        <state vertical-scroll-proportion="0.4535433">
+          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
           <folding>
             <element signature="e#100#113#0" expanded="true" />
+            <element signature="e#530#915#0" expanded="false" />
+            <element signature="e#959#2107#0" expanded="false" />
+            <element signature="e#2275#3121#0" expanded="false" />
+            <element signature="e#3151#3880#0" expanded="false" />
           </folding>
         </state>
       </provider>
