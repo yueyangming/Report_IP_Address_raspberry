@@ -5,11 +5,26 @@ import socket
 import fcntl
 import struct
 from instapush import Instapush, App
+import urllib2
+import time
 
 # Initialization
 
 Exist_wlan = 0
 Exist_Eth = 0
+
+#Test if the Raspberry can connect the internet
+
+Url_instapush = 'https://instapush.im/'
+while 1:
+    try:
+        response_test = urllib2.urlopen(Url_instapush)
+        string_instapush = response_test.read()
+        length = len(string_instapush)
+        if length > 0:
+            break
+    except :
+        time.sleep(5)
 
 # Get IP address
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
