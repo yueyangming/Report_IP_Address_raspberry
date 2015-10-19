@@ -12,6 +12,9 @@ import re
 # Initialization
 
 # Deifine these constant at the beginning of the program
+
+Date_temp = 0
+
 IP_ADDRESS_ETH_TEMP = '0.0.0.0'
 IP_ADDRESS_WLAN_TEMP = '0.0.0.0'
 IP_ADDRESS_INTERNET_TEMP = '0.0.0.0'
@@ -79,6 +82,10 @@ def Pushinformation(Ip_address_Eth0,Ip_address_wlan0,Ip_address_internet,Exist_E
 
     app = App(appid = '561bac12a4c48a31793792b5', secret = '5b3446093d50511955f95b589988c541')
 
+    local_time = time.localtime()
+    string_time = 'Now Time is : ' + str(local_time[3]) + ' : ' + str(local_time[4])
+    app.notify(event_name = 'Report_IP_address_of_raspberry_pi', trackers ={'Message': string_time})
+
     if Exist_Eth:
         string_Eth0 = 'Eth Ip address : ' + Ip_address_Eth0
         app.notify(event_name = 'Report_IP_address_of_raspberry_pi', trackers ={'Message': string_Eth0})
@@ -93,15 +100,28 @@ def Pushinformation(Ip_address_Eth0,Ip_address_wlan0,Ip_address_internet,Exist_E
 
 def Check_Ip_change() :
     # This function can detect if there is any changes in Ip address, if any, will send new Ip address to mobile phone.
+    # It also can detect date changes, if a day has passed, it will report IP address again, because the Instapush will
+    # only receive information in one day.
 
+    global Date_temp
     global IP_ADDRESS_ETH_TEMP
     global IP_ADDRESS_WLAN_TEMP
     global IP_ADDRESS_INTERNET_TEMP
 
     (Ip_address_Eth0,Ip_address_wlan0,Ip_address_internet,Exist_Eth,Exist_wlan,Exist_Internet) = Get_Ip_address()
 
-    if (Ip_address_Eth0 <> IP_ADDRESS_ETH_TEMP) | (Ip_address_wlan0 <> IP_ADDRESS_WLAN_TEMP) | (Ip_address_internet <> IP_ADDRESS_INTERNET_TEMP):
+    local_Time = time.localtime()
+    Date_now = local_Time[2]
+
+
+    if (Ip_address_Eth0 <> IP_ADDRESS_ETH_TEMP) \
+            | (Ip_address_wlan0 <> IP_ADDRESS_WLAN_TEMP) \
+            | (Ip_address_internet <> IP_ADDRESS_INTERNET_TEMP) \
+            | (Date_now > Date_temp) :
+
         Pushinformation(Ip_address_Eth0,Ip_address_wlan0,Ip_address_internet,Exist_Eth,Exist_wlan,Exist_Internet)
+
+    Date_temp = Date_now
 
     IP_ADDRESS_ETH_TEMP = Ip_address_Eth0
     IP_ADDRESS_WLAN_TEMP = Ip_address_wlan0
